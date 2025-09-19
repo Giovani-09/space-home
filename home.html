@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ngôi nhà trong không gian</title>
+  <style>
+    body {
+      background: white; /* Nền trắng */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+    .floor {
+      width: 200px;
+      height: 60px;
+      margin: 10px 0;
+      border: 2px solid black;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .living { background-color: #f4cccc; }     /* Khu sinh hoạt */
+    .energy { background-color: #c9daf8; }     /* Khu năng lượng */
+    .farm   { background-color: #d9ead3; }     /* Khu nông nghiệp */
+    .tech   { background-color: #ffe599; }     /* Khu kỹ thuật */
+    .obs    { background-color: #ead1dc; }     /* Khu quan sát */
+  </style>
+</head>
+<body>
+  <h2>Ngôi nhà trong không gian</h2>
+
+  <div class="floor obs">Khu quan sát</div>
+  <div class="floor tech">Khu kỹ thuật</div>
+  <div class="floor farm">Khu nông nghiệp</div>
+  <div class="floor energy">Khu năng lượng</div>
+  <div class="floor living">Khu sinh hoạt</div>
+
+  <p>(Demo mô hình xếp tầng – nền trắng)</p>
+</body>
+</html>

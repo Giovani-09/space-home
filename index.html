@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ngôi Nhà Trong Không Gian - Demo</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body style="margin:0; height:100vh;">
+  <a-scene embedded background="color: black">
+
+    <!-- Camera + Controls -->
+    <a-entity position="0 1.6 4">
+      <a-camera wasd-controls-enabled="true" look-controls="true"></a-camera>
+    </a-entity>
+
+    <!-- Tầng 1: Kỹ thuật -->
+    <a-cylinder position="0 0 0" radius="1.5" height="0.5" color="#444"></a-cylinder>
+    <a-text value="Kỹ Thuật" color="white" align="center" position="0 0.3 1.8" scale="1.2 1.2 1"></a-text>
+
+    <!-- Tầng 2: Năng lượng -->
+    <a-cylinder position="0 0.6 0" radius="1.4" height="0.5" color="#ffcc00"></a-cylinder>
+    <a-text value="Năng Lượng" color="white" align="center" position="0 0.9 1.8" scale="1.2 1.2 1"></a-text>
+
+    <!-- Tầng 3: Nông nghiệp -->
+    <a-cylinder position="0 1.2 0" radius="1.3" height="0.5" color="#33cc33"></a-cylinder>
+    <a-text value="Nông Nghiệp" color="white" align="center" position="0 1.5 1.8" scale="1.2 1.2 1"></a-text>
+
+    <!-- Tầng 4: Sinh hoạt -->
+    <a-cylinder position="0 1.8 0" radius="1.2" height="0.5" color="#3399ff"></a-cylinder>
+    <a-text value="Sinh Hoạt" color="white" align="center" position="0 2.1 1.8" scale="1.2 1.2 1"></a-text>
+
+    <!-- Tầng 5: Quan sát -->
+    <a-cylinder position="0 2.4 0" radius="1.1" height="0.5" color="#cc33ff"></a-cylinder>
+    <a-text value="Quan Sát" color="white" align="center" position="0 2.7 1.8" scale="1.2 1.2 1"></a-text>
+
+    <!-- Ánh sáng -->
+    <a-entity light="type: directional; color: #fff; intensity: 1" position="2 4 5"></a-entity>
+    <a-entity light="type: ambient; color: #555"></a-entity>
+
+  </a-scene>
+</body>
+</html>
